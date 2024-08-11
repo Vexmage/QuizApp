@@ -26,7 +26,20 @@ namespace QuizApp.Services
             return quiz;
         }
 
+        // Method to evaluate the quiz
+        public Dictionary<int, bool> EvaluateQuiz(Dictionary<int, int> userAnswers, Quiz quiz)
+        {
+            var results = new Dictionary<int, bool>();
 
+            foreach (var question in quiz.Questions)
+            {
+                if (userAnswers.TryGetValue(question.Id, out int selectedOption))
+                {
+                    results[question.Id] = (selectedOption == question.CorrectOptionIndex);
+                }
+            }
 
+            return results;
+        }
     }
 }

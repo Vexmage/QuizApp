@@ -1,4 +1,7 @@
 ﻿@model QuizApp.Models.Quiz
+@{
+    var results = ViewBag.Results as Dictionary<int, bool>;
+}
 
 <div class="quiz-container">
     <h1>@Model.Title</h1>
@@ -16,9 +19,21 @@
                             <label for="question_@question.Id@i">@question.Options[i]</label>
                         </li>
                     }
-
-
                 </ul>
+
+                @if (results != null && results.ContainsKey(question.Id))
+                {
+                    <p class="feedback">
+                        @if (results[question.Id])
+                        {
+                            <span class="correct">Correct!</span>
+                        }
+                        else
+                        {
+                            <span class="incorrect">Incorrect. The correct answer was @question.Options[question.CorrectOptionIndex].</span>
+                        }
+                    </p>
+                }
             </div>
         }
         <button type="submit">Submit Quiz</button>
