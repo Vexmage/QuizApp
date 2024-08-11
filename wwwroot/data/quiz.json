@@ -1,0 +1,38 @@
+{
+  "Title": "Programming Quiz",
+  "Questions": [
+    {
+      "Id": 1,
+      "Text": "What does HTML stand for?",
+      "Options": [
+        "Hyper Text Markup Language",
+        "High Text Markup Language",
+        "Hyper Tabular Markup Language",
+        "None of these"
+      ],
+      "CorrectOptionIndex": 0
+    },
+    {
+      "Id": 2,
+      "Text": "Which language is used for web apps?",
+      "Options": [
+        "PHP",
+        "Python",
+        "JavaScript",
+        "All"
+      ],
+      "CorrectOptionIndex": 3
+    },
+    {
+      "Id": 3,
+      "Text": "How do you add a comment in a CSS file?",
+      "Options": [
+        "/* this is a comment */",
+        "// this is a comment",
+        "# this is a comment",
+        "<!-- this is a comment -->"
+      ],
+      "CorrectOptionIndex": 0
+    }
+  ]
+}
