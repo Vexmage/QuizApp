@@ -13,7 +13,7 @@ QuizApp is a simple web-based application developed using ASP.NET Core that allo
 - ASP.NET Core
 - C#
 - HTML/CSS
-- JavaScript (optional)
+- JavaScript 
 
 ## Getting Started
 
