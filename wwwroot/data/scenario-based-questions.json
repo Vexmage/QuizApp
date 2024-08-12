@@ -1,0 +1,49 @@
+{
+  "Title": "Scenario-Based Questions",
+  "Questions": [
+    {
+      "Id": 1,
+      "Text": "Imagine you are in a meeting with the CEO discussing the initial rollout of the e-commerce platform. The CEO asks how you plan to handle customer feedback during this phase. Which of the following approaches would you recommend?",
+      "Options": [
+        "A) Launch the platform and gather feedback passively without direct interaction.",
+        "B) Actively engage with customers through surveys, focus groups, and support channels to gather feedback and make iterative improvements.",
+        "C) Ignore customer feedback until the full platform is launched.",
+        "D) Implement all feedback immediately without considering feasibility or impact."
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 2,
+      "Text": "The CEO is concerned about the security of the payment processing system. Which of the following measures would you recommend to ensure secure transactions?",
+      "Options": [
+        "A) Use a third-party payment gateway like Braintree with strong encryption and compliance with industry standards.",
+        "B) Develop a custom payment system from scratch.",
+        "C) Use an outdated payment processing method to save costs.",
+        "D) Allow payments through unsecured channels to speed up the process."
+      ],
+      "CorrectOptionIndex": 0
+    },
+    {
+      "Id": 3,
+      "Text": "You’ve been tasked with improving the user experience (UX) of the e-commerce platform. Which of the following actions would you prioritize?",
+      "Options": [
+        "A) Simplifying the checkout process and reducing the number of steps.",
+        "B) Adding more advertisements on every page to increase revenue.",
+        "C) Removing navigation menus to make the site look cleaner.",
+        "D) Requiring users to sign in multiple times during a session for added security."
+      ],
+      "CorrectOptionIndex": 0
+    },
+    {
+      "Id": 4,
+      "Text": "The CEO asks you how you plan to ensure the platform is scalable as more users are added. What would you emphasize in your response?",
+      "Options": [
+        "A) Building the platform with a modular architecture that can be easily scaled horizontally and vertically.",
+        "B) Designing the platform to handle a fixed number of users without the need for future upgrades.",
+        "C) Focusing on performance optimizations after the full launch.",
+        "D) Limiting the number of users allowed on the platform at any given time."
+      ],
+      "CorrectOptionIndex": 0
+    }
+  ]
+}

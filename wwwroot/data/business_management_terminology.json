@@ -1,0 +1,50 @@
+
+{
+  "Title": "Business Management Terminology",
+  "Questions": [
+    {
+      "Id": 1,
+      "Text": "What is stakeholder management?",
+      "Options": [
+        "A) Managing the finances of the company.",
+        "B) Identifying and managing relationships with all parties involved in or affected by a project.",
+        "C) Managing the stocks and shares of the company.",
+        "D) Managing only the internal team members."
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 2,
+      "Text": "In the context of risk management, what does 'risk mitigation' involve?",
+      "Options": [
+        "A) Ignoring potential risks until they become actual problems.",
+        "B) Identifying, assessing, and taking steps to minimize the impact of risks.",
+        "C) Avoiding taking any risks altogether.",
+        "D) Transferring all risks to a third party."
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 3,
+      "Text": "What is meant by 'data-driven decision making'?",
+      "Options": [
+        "A) Making decisions based on gut feeling.",
+        "B) Making decisions based on historical data and empirical evidence.",
+        "C) Making decisions without any data.",
+        "D) Making decisions based on what competitors are doing."
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 4,
+      "Text": "What does 'omnichannel strategy' refer to?",
+      "Options": [
+        "A) Selling products through only one channel.",
+        "B) Providing customers with a seamless experience across multiple channels, such as online, in-store, and mobile.",
+        "C) Focusing exclusively on online sales.",
+        "D) Focusing exclusively on physical retail sales."
+      ],
+      "CorrectOptionIndex": 1
+    }
+  ]
+}

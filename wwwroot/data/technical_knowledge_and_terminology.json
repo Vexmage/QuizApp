@@ -1,0 +1,49 @@
+{
+  "Title": "Technical Knowledge and Terminology",
+  "Questions": [
+    {
+      "Id": 1,
+      "Text": "Which technology is commonly used for secure payment processing in e-commerce platforms?",
+      "Options": [
+        "A) ASP.NET Core Identity",
+        "B) Braintree",
+        "C) MySQL",
+        "D) Bootstrap"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 2,
+      "Text": "What is the purpose of the Entity Framework Core (EF Core) in an ASP.NET Core application?",
+      "Options": [
+        "A) To manage user authentication and authorization.",
+        "B) To handle data manipulation and querying in a database.",
+        "C) To design the front-end user interface.",
+        "D) To secure communication between servers."
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 3,
+      "Text": "What is A/B testing, and how is it used in e-commerce?",
+      "Options": [
+        "A) Testing two different products to see which one sells more.",
+        "B) Comparing two versions of a webpage to determine which one performs better based on user interactions.",
+        "C) Testing two different server configurations for performance.",
+        "D) Running two different marketing campaigns simultaneously."
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 4,
+      "Text": "Which of the following best describes MailKit and MimeKit?",
+      "Options": [
+        "A) Libraries used for handling file uploads in an application.",
+        "B) Libraries used for handling email functionalities, including sending newsletters and notifications.",
+        "C) Libraries used for managing user sessions.",
+        "D) Libraries used for database management."
+      ],
+      "CorrectOptionIndex": 1
+    }
+  ]
+}
