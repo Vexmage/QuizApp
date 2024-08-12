@@ -6,16 +6,9 @@ namespace QuizApp.Services
 {
     public class QuizService
     {
-        private readonly string _filePath;
-
-        public QuizService(string filePath)
+        public Quiz LoadQuiz(string filePath)
         {
-            _filePath = filePath;
-        }
-
-        public Quiz LoadQuiz()
-        {
-            var jsonString = File.ReadAllText(_filePath);
+            var jsonString = File.ReadAllText(filePath);
             var quiz = JsonSerializer.Deserialize<Quiz>(jsonString);
 
             if (quiz == null)
@@ -26,7 +19,6 @@ namespace QuizApp.Services
             return quiz;
         }
 
-        // Method to evaluate the quiz
         public Dictionary<int, bool> EvaluateQuiz(Dictionary<int, int> userAnswers, Quiz quiz)
         {
             var results = new Dictionary<int, bool>();

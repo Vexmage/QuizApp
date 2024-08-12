@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Select a Quiz";
+}
+
+<h1>Select a Quiz</h1>
+
+<form method="post" action="/Home/LoadQuiz">
+    <div>
+        <label>
+            <input type="radio" name="quizFileName" value="quiz.json" checked />
+            Programming Quiz
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="quizFileName" value="ecommerce_quiz.json" />
+            E-commerce Management Concepts
+        </label>
+    </div>
+    <button type="submit">Start Quiz</button>
+</form>

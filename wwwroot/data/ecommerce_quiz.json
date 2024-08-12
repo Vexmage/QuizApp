@@ -1,0 +1,49 @@
+{
+  "Title": "E-commerce Management Concepts",
+  "Questions": [
+    {
+      "Id": 1,
+      "Text": "What is a Minimum Viable Product (MVP), and why is it important in a phased rollout strategy?",
+      "Options": [
+        "A) A fully-featured product that is released to the entire market.",
+        "B) The initial version of a product with just enough features to satisfy early adopters.",
+        "C) A product that has all the features but is not yet tested.",
+        "D) A prototype that is never released to the market."
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 2,
+      "Text": "Which of the following is NOT a key component of Conversion Rate Optimization (CRO)?",
+      "Options": [
+        "A) A/B testing",
+        "B) User experience (UX) improvements",
+        "C) Increasing page load times",
+        "D) Analyzing user behavior"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 3,
+      "Text": "What does 'scalability' mean in the context of an e-commerce platform?",
+      "Options": [
+        "A) The ability to reduce the size of the platform to save costs.",
+        "B) The ability to increase the number of users and transactions the platform can handle without compromising performance.",
+        "C) The ability to scale down operations to reduce workload.",
+        "D) The ability to change the platform's design based on user feedback."
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 4,
+      "Text": "Which of the following best describes a phased rollout?",
+      "Options": [
+        "A) Launching the full platform to all users at once.",
+        "B) Gradually releasing the platform to different user groups over time.",
+        "C) Rolling back the platform if there are too many bugs.",
+        "D) Developing the platform in secret before announcing it to the public."
+      ],
+      "CorrectOptionIndex": 1
+    }
+  ]
+}

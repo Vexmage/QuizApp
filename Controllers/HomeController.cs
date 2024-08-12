@@ -13,19 +13,33 @@ namespace QuizApp.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", "quiz.json");
-            _quizService = new QuizService(filePath);
+            _quizService = new QuizService();
         }
 
         public IActionResult Index()
         {
-            var quiz = _quizService.LoadQuiz();
-            return View(quiz);
+            // Display quiz selection page
+            return View("SelectQuiz");
         }
 
         [HttpPost]
-        public IActionResult SubmitQuiz(IFormCollection form)
+        public IActionResult LoadQuiz(string quizFileName)
         {
+            // Load the selected quiz
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", quizFileName);
+            var quiz = _quizService.LoadQuiz(filePath);
+            ViewData["QuizFileName"] = quizFileName;
+            return View("Quiz", quiz);
+        }
+
+        [HttpPost]
+        public IActionResult SubmitQuiz(IFormCollection form, string quizFileName)
+        {
+            if (string.IsNullOrEmpty(quizFileName))
+            {
+                return RedirectToAction("Index"); // Redirect to quiz selection if quizFileName is missing
+            }
+
             var userAnswers = new Dictionary<int, int>();
 
             foreach (var key in form.Keys)
@@ -38,13 +52,16 @@ namespace QuizApp.Controllers
                 }
             }
 
-            var quiz = _quizService.LoadQuiz();
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", quizFileName);
+            var quiz = _quizService.LoadQuiz(filePath);
             var results = _quizService.EvaluateQuiz(userAnswers, quiz);
 
             ViewBag.Results = results;
+            ViewData["QuizFileName"] = quizFileName;
 
-            return View("Index", quiz);
+            return View("Quiz", quiz);
         }
+
 
         public IActionResult Privacy()
         {
