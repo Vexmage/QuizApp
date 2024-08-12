@@ -6,7 +6,11 @@
 <div class="quiz-container">
     <h1>@Model.Title</h1>
 
-    <form method="post" action="/Home/SubmitQuiz">
+    <div class="timer">
+        <p>Time remaining: <span id="time">03:00</span></p>
+    </div>
+
+    <form method="post" action="/Home/SubmitQuiz" id="quizForm">
         @foreach (var question in Model.Questions)
         {
             <div class="question-block">
@@ -39,3 +43,99 @@
         <button type="submit">Submit Quiz</button>
     </form>
 </div>
+
+<!-- Popup Modal -->
+<div id="timeoutModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>You ran out of time!</p>
+        <button id="retryButton">Try Again</button>
+    </div>
+</div>
+
+<style>
+    /* Modal Styles */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        text-align: center;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    // Timer settings
+    var timeLeft = 180; // Time in seconds (3 minutes)
+    var timerElement = document.getElementById('time');
+    var quizForm = document.getElementById('quizForm');
+    var modal = document.getElementById('timeoutModal');
+    var retryButton = document.getElementById('retryButton');
+
+    function updateTimer() {
+        var minutes = Math.floor(timeLeft / 60);
+        var seconds = timeLeft % 60;
+
+        // Add leading zeros
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+
+        timerElement.textContent = minutes + ":" + seconds;
+
+        // Check if time is up
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            modal.style.display = "block"; // Show the timeout modal
+        }
+
+        timeLeft--;
+    }
+
+    // Start the timer
+    var timerInterval = setInterval(updateTimer, 1000);
+
+    // When the user clicks on retry, reload the page to retake the quiz
+    retryButton.onclick = function() {
+        location.reload();
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    document.querySelector(".close").onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
