@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using QuizApp.Models;
 using QuizApp.Services;
@@ -16,11 +17,24 @@ namespace QuizApp.Controllers
             _quizService = new QuizService();
         }
 
+        public IActionResult Landing()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
-            // Display quiz selection page
-            return View("SelectQuiz");
+            return RedirectToAction("Landing");
         }
+
+
+
+        [Authorize]
+        public IActionResult SelectQuiz()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         public IActionResult LoadQuiz(string quizFileName)

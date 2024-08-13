@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Welcome to QuizApp";
+}
+
+<h1>Welcome to QuizApp</h1>
+
+<p>This is a platform to test and improve your knowledge through quizzes.</p>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <p>
+        <a class="btn btn-primary" asp-controller="Home" asp-action="SelectQuiz">Go to Quiz Selection</a>
+    </p>
+}
+else
+{
+    <p>
+        Please <a asp-area="" asp-controller="Account" asp-action="Login">log in</a> or <a asp-area="" asp-controller="Account" asp-action="Register">register</a> to start taking quizzes.
+    </p>
+}
