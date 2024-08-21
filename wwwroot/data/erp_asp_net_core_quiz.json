@@ -1,0 +1,445 @@
+{
+  "Title": "Comprehensive ERP and ASP.NET Core Quiz",
+  "Questions": [
+    {
+      "Id": 1,
+      "Text": "What is ERP?",
+      "Options": [
+        "Enterprise Resource Planning",
+        "Enterprise Resource Program",
+        "Enterprise Resource Production",
+        "Enterprise Resource Project"
+      ],
+      "CorrectOptionIndex": 0
+    },
+    {
+      "Id": 2,
+      "Text": "Which of the following is NOT a feature of ASP.NET Core?",
+      "Options": [
+        "Cross-Platform",
+        "High Performance",
+        "Open Source",
+        "Limited to Windows"
+      ],
+      "CorrectOptionIndex": 3
+    },
+    {
+      "Id": 3,
+      "Text": "What is the primary goal of an ERP system?",
+      "Options": [
+        "To increase manual data entry",
+        "To streamline and automate business processes",
+        "To create more data silos",
+        "To eliminate automation"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 4,
+      "Text": "Which technology is commonly used for real-time communication in ASP.NET Core applications?",
+      "Options": [
+        "SignalR",
+        "WebSockets",
+        "REST",
+        "gRPC"
+      ],
+      "CorrectOptionIndex": 0
+    },
+    {
+      "Id": 5,
+      "Text": "Which of the following is a cloud-optimized feature of ASP.NET Core?",
+      "Options": [
+        "Limited to on-premises deployment",
+        "Only supports Windows",
+        "Cross-platform and cloud-ready",
+        "Requires heavy server resources"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 6,
+      "Text": "What does multi-location inventory management in an ERP system involve?",
+      "Options": [
+        "Tracking inventory at a single location",
+        "Tracking inventory across multiple locations",
+        "Eliminating inventory tracking",
+        "Only tracking inventory in the cloud"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 7,
+      "Text": "Which of the following e-commerce platforms is known for its API-first approach?",
+      "Options": [
+        "Magento",
+        "BigCommerce",
+        "WooCommerce",
+        "Shopify"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 8,
+      "Text": "What role does ASP.NET Core play in integrating ERP systems with e-commerce platforms?",
+      "Options": [
+        "It only handles front-end design",
+        "It manages middleware and API integration",
+        "It replaces ERP systems",
+        "It provides only static content"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 9,
+      "Text": "Which ERP system is known for being cloud-based and offering a comprehensive suite of services?",
+      "Options": [
+        "SAP",
+        "Oracle ERP",
+        "Microsoft Dynamics 365",
+        "NetSuite"
+      ],
+      "CorrectOptionIndex": 3
+    },
+    {
+      "Id": 10,
+      "Text": "What is one of the benefits of using a headless CMS with a React frontend?",
+      "Options": [
+        "Improved backend performance",
+        "Easier frontend customization",
+        "Limited SEO capabilities",
+        "Less flexibility in content management"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 11,
+      "Text": "Which ASP.NET Core feature helps in managing dependencies within an application?",
+      "Options": [
+        "MVC",
+        "Dependency Injection",
+        "Razor Pages",
+        "Static Files"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 12,
+      "Text": "What is one of the key advantages of using microservices architecture with ASP.NET Core?",
+      "Options": [
+        "Increased monolithic design",
+        "Independent scalability of services",
+        "Dependency on a single service",
+        "Limited to small applications"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 13,
+      "Text": "How does ASP.NET Core handle security for e-commerce platforms?",
+      "Options": [
+        "By providing no built-in security features",
+        "Through built-in authentication and authorization",
+        "By relying on external tools only",
+        "By limiting access to APIs"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 14,
+      "Text": "Which e-commerce platform is highly customizable and ideal for complex business needs?",
+      "Options": [
+        "Shopify",
+        "BigCommerce",
+        "WooCommerce",
+        "Magento"
+      ],
+      "CorrectOptionIndex": 3
+    },
+    {
+      "Id": 15,
+      "Text": "What is the primary benefit of using a modular design in ASP.NET Core?",
+      "Options": [
+        "Increased application size",
+        "Limited flexibility",
+        "Reduced application size and increased flexibility",
+        "Decreased performance"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 16,
+      "Text": "Which ERP system is known for integrating well with Microsoft products?",
+      "Options": [
+        "SAP",
+        "Oracle ERP",
+        "NetSuite",
+        "Microsoft Dynamics 365"
+      ],
+      "CorrectOptionIndex": 3
+    },
+    {
+      "Id": 17,
+      "Text": "What is the role of middleware in ASP.NET Core?",
+      "Options": [
+        "To handle HTTP requests and responses",
+        "To manage front-end design",
+        "To store database information",
+        "To serve static files"
+      ],
+      "CorrectOptionIndex": 0
+    },
+    {
+      "Id": 18,
+      "Text": "Which front-end framework is commonly used with ASP.NET Core for building modern UIs?",
+      "Options": [
+        "Angular",
+        "React",
+        "Vue.js",
+        "All of the above"
+      ],
+      "CorrectOptionIndex": 3
+    },
+    {
+      "Id": 19,
+      "Text": "What does scalability mean in the context of ASP.NET Core applications?",
+      "Options": [
+        "The ability to handle a fixed number of users",
+        "The ability to handle increasing loads without performance degradation",
+        "Limited to small-scale applications",
+        "Increased complexity in development"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 20,
+      "Text": "Which of the following ERP systems is known for its extensive customization and complex deployments?",
+      "Options": [
+        "NetSuite",
+        "Microsoft Dynamics 365",
+        "Oracle ERP",
+        "SAP"
+      ],
+      "CorrectOptionIndex": 3
+    },
+    {
+      "Id": 21,
+      "Text": "Which of the following is an advantage of using ASP.NET Core with BigCommerce?",
+      "Options": [
+        "Limited API integration",
+        "No scalability options",
+        "Seamless API-first integration",
+        "Limited to on-premises deployments"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 22,
+      "Text": "Which component of ASP.NET Core is used for handling real-time communication?",
+      "Options": [
+        "SignalR",
+        "MVC",
+        "Razor Pages",
+        "Identity"
+      ],
+      "CorrectOptionIndex": 0
+    },
+    {
+      "Id": 23,
+      "Text": "Which ERP system is widely used for financial management and e-commerce integration?",
+      "Options": [
+        "SAP",
+        "NetSuite",
+        "Oracle ERP",
+        "Microsoft Dynamics 365"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 24,
+      "Text": "What is a key feature of the microservices architecture when used with ASP.NET Core?",
+      "Options": [
+        "Increased monolithic architecture",
+        "Independent scaling and deployment",
+        "Limited flexibility",
+        "Dependency on a single database"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 25,
+      "Text": "How can ASP.NET Core be used to enhance security in e-commerce platforms?",
+      "Options": [
+        "By providing no security features",
+        "By implementing custom authentication and authorization protocols",
+        "By limiting access to front-end users",
+        "By storing data in plain text"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 26,
+      "Text": "Which ERP system offers a comprehensive suite of services and is cloud-based?",
+      "Options": [
+        "SAP",
+        "Oracle ERP",
+        "NetSuite",
+        "Microsoft Dynamics 365"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 27,
+      "Text": "What is the role of ASP.NET Core in integrating e-commerce platforms with ERP systems?",
+      "Options": [
+        "To serve static content",
+        "To manage API and middleware integration",
+        "To replace ERP systems",
+        "To limit access to ERP data"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 28,
+      "Text": "Which front-end framework is often used with ASP.NET Core to build interactive UIs?",
+      "Options": [
+        "React",
+        "Angular",
+        "Vue.js",
+        "All of the above"
+      ],
+      "CorrectOptionIndex": 3
+    },
+    {
+      "Id": 29,
+      "Text": "Which feature of ASP.NET Core makes it suitable for cloud deployments?",
+      "Options": [
+        "Limited scalability",
+        "High resource consumption",
+        "Cross-platform and lightweight",
+        "Monolithic design"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 30,
+      "Text": "Which ERP system is known for its integration with cloud services and scalability?",
+      "Options": [
+        "NetSuite",
+        "SAP",
+        "Oracle ERP",
+        "Microsoft Dynamics 365"
+      ],
+      "CorrectOptionIndex": 0
+    },
+    {
+      "Id": 31,
+      "Text": "What is the benefit of using ASP.NET Core with an ERP system?",
+      "Options": [
+        "Limited data integration",
+        "Manual data entry",
+        "Automated data synchronization and workflow management",
+        "Increased manual processing"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 32,
+      "Text": "Which of the following is a popular cloud-based ERP system?",
+      "Options": [
+        "SAP",
+        "Oracle ERP",
+        "NetSuite",
+        "Microsoft Dynamics 365"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 33,
+      "Text": "What does the modular design of ASP.NET Core allow developers to do?",
+      "Options": [
+        "Increase application size",
+        "Reduce flexibility",
+        "Include only necessary components",
+        "Decrease performance"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 34,
+      "Text": "Which ERP system is known for its tight integration with other Microsoft products?",
+      "Options": [
+        "SAP",
+        "Oracle ERP",
+        "Microsoft Dynamics 365",
+        "NetSuite"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 35,
+      "Text": "How does ASP.NET Core handle HTTP requests?",
+      "Options": [
+        "Through middleware components",
+        "By serving static content only",
+        "By relying on external tools",
+        "Through a single, monolithic handler"
+      ],
+      "CorrectOptionIndex": 0
+    },
+    {
+      "Id": 36,
+      "Text": "What makes React a suitable choice for building front-end applications with ASP.NET Core?",
+      "Options": [
+        "Limited interactivity",
+        "Static content generation",
+        "Dynamic UI capabilities and seamless API integration",
+        "Increased development complexity"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 37,
+      "Text": "Which ERP system is often used for complex financial and supply chain management?",
+      "Options": [
+        "SAP",
+        "NetSuite",
+        "Oracle ERP",
+        "Microsoft Dynamics 365"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 38,
+      "Text": "What is the advantage of using ASP.NET Core for microservices architecture?",
+      "Options": [
+        "Monolithic structure",
+        "Increased code dependencies",
+        "Independent scaling and deployment",
+        "Single database dependency"
+      ],
+      "CorrectOptionIndex": 2
+    },
+    {
+      "Id": 39,
+      "Text": "How can ASP.NET Core improve the security of e-commerce platforms?",
+      "Options": [
+        "By providing limited security features",
+        "Through built-in security mechanisms and custom protocols",
+        "By reducing access to APIs",
+        "By storing data in plain text"
+      ],
+      "CorrectOptionIndex": 1
+    },
+    {
+      "Id": 40,
+      "Text": "Which ERP system is known for its modularity and extensive customization options?",
+      "Options": [
+        "NetSuite",
+        "SAP",
+        "Oracle ERP",
+        "Microsoft Dynamics 365"
+      ],
+      "CorrectOptionIndex": 1
+    }
+  ]
+}
