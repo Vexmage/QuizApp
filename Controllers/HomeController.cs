@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using QuizApp.Models;
 using QuizApp.Services;
 using System.Diagnostics;
+using System.Text.Json;
 
 namespace QuizApp.Controllers
 {
@@ -27,23 +28,18 @@ namespace QuizApp.Controllers
             return RedirectToAction("Landing");
         }
 
-
-
         [Authorize]
         public IActionResult SelectQuiz()
         {
             return View();
         }
 
-
         [HttpPost]
         public IActionResult LoadQuiz(string quizFileName, bool timerEnabled = true, int timerDuration = 180)
         {
-            // Load the selected quiz
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", quizFileName);
             var quiz = _quizService.LoadQuiz(filePath);
 
-            // Use the passed-in timer settings
             ViewBag.TimerEnabled = timerEnabled;
             ViewBag.TimerDuration = timerDuration;
 
@@ -81,6 +77,37 @@ namespace QuizApp.Controllers
             return View("Quiz", quiz);
         }
 
+        public IActionResult StudyFiles()
+        {
+            var studyFiles = LoadAllStudyFiles(); // This loads all study files
+            return View(studyFiles);
+        }
+
+        private List<StudyFile> LoadAllStudyFiles()
+        {
+            var studyFiles = new List<StudyFile>();
+            var directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", "studyFiles");
+
+            foreach (var file in Directory.GetFiles(directoryPath, "*.json"))
+            {
+                try
+                {
+                    var jsonString = System.IO.File.ReadAllText(file);
+                    var fileStudyFiles = JsonSerializer.Deserialize<List<StudyFile>>(jsonString);
+
+                    if (fileStudyFiles != null)
+                    {
+                        studyFiles.AddRange(fileStudyFiles);
+                    }
+                }
+                catch (JsonException ex)
+                {
+                    Debug.WriteLine($"Failed to deserialize file: {file}. Error: {ex.Message}");
+                }
+            }
+
+            return studyFiles;
+        }
 
         public IActionResult Privacy()
         {

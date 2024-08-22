@@ -1,0 +1,23 @@
+﻿@model QuizApp.Models.StudyFile
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="study-file-container">
+    <h1>@Model.Title</h1>
+
+    <div class="content">
+        <p>@Model.Content</p>
+    </div>
+
+    <div class="vocabulary">
+        <h3>Vocabulary</h3>
+        <ul>
+            @foreach (var word in Model.Vocabulary)
+            {
+                <li><strong>@word.Term:</strong> @word.Definition</li>
+            }
+        </ul>
+    </div>
+</div>

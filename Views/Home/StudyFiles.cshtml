@@ -1,0 +1,27 @@
+﻿@model IEnumerable<QuizApp.Models.StudyFile>
+
+@{
+    ViewData["Title"] = "Study Files";
+}
+
+<div class="study-files-container">
+    <h1>Study Files</h1>
+
+    <ul class="list-group">
+        @foreach (var studyFile in Model)
+        {
+            <li class="list-group-item">
+                <h2>@studyFile.Title</h2>
+                <p>@studyFile.Content</p>
+
+                <h3>Vocabulary</h3>
+                <ul>
+                    @foreach (var word in studyFile.Vocabulary)
+                    {
+                        <li><strong>@word.Term:</strong> @word.Definition</li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+</div>
