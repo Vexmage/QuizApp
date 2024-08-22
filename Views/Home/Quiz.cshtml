@@ -37,13 +37,22 @@
                         {
                             <span class="incorrect">Incorrect. The correct answer was @question.Options[question.CorrectOptionIndex].</span>
                         }
+
+                        <!-- Display the explanation below the feedback -->
+                        @if (!string.IsNullOrEmpty(question.Explanation))
+                        {
+                        <p class="explanation"><strong>Explanation:</strong> @question.Explanation</p>
+                        }
+                        else
+                        {
+                        <p class="explanation"><strong>Explanation:</strong> No explanation provided for this question.</p>
+                        }
                     </p>
                 }
             </div>
         }
         <button type="submit">Submit Quiz</button>
     </form>
-
 </div>
 
 <!-- Popup Modal -->

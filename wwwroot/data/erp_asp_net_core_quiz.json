@@ -10,7 +10,8 @@
         "Enterprise Resource Production",
         "Enterprise Resource Project"
       ],
-      "CorrectOptionIndex": 0
+      "CorrectOptionIndex": 0,
+      "Explanation": "ERP stands for Enterprise Resource Planning. It is a type of software system that helps organizations manage and integrate important parts of their businesses, such as inventory, order management, and financials."
     },
     {
       "Id": 2,
@@ -21,7 +22,8 @@
         "Open Source",
         "Limited to Windows"
       ],
-      "CorrectOptionIndex": 3
+      "CorrectOptionIndex": 3,
+      "Explanation": "ASP.NET Core is a cross-platform, high-performance, open-source framework. It is not limited to Windows; it can run on Windows, macOS, and Linux."
     },
     {
       "Id": 3,
@@ -32,7 +34,8 @@
         "To create more data silos",
         "To eliminate automation"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "The primary goal of an ERP system is to streamline and automate business processes, improving efficiency and decision-making across the organization."
     },
     {
       "Id": 4,
@@ -43,7 +46,8 @@
         "REST",
         "gRPC"
       ],
-      "CorrectOptionIndex": 0
+      "CorrectOptionIndex": 0,
+      "Explanation": "SignalR is a library in ASP.NET Core that provides real-time web functionality, allowing server-side code to push content to clients instantly."
     },
     {
       "Id": 5,
@@ -54,7 +58,8 @@
         "Cross-platform and cloud-ready",
         "Requires heavy server resources"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "ASP.NET Core is optimized for cloud deployments, being cross-platform and lightweight, making it ideal for cloud environments."
     },
     {
       "Id": 6,
@@ -65,7 +70,8 @@
         "Eliminating inventory tracking",
         "Only tracking inventory in the cloud"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "Multi-location inventory management involves tracking and managing inventory across different physical locations, ensuring accurate stock levels and efficient distribution."
     },
     {
       "Id": 7,
@@ -76,7 +82,8 @@
         "WooCommerce",
         "Shopify"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "BigCommerce is known for its API-first approach, providing robust APIs that allow for extensive customization and integration with other systems."
     },
     {
       "Id": 8,
@@ -87,7 +94,8 @@
         "It replaces ERP systems",
         "It provides only static content"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "ASP.NET Core is often used to manage middleware and API integration, facilitating communication and data exchange between ERP systems and e-commerce platforms."
     },
     {
       "Id": 9,
@@ -98,7 +106,8 @@
         "Microsoft Dynamics 365",
         "NetSuite"
       ],
-      "CorrectOptionIndex": 3
+      "CorrectOptionIndex": 3,
+      "Explanation": "NetSuite is a cloud-based ERP system that offers a comprehensive suite of services, including financial management, CRM, and e-commerce."
     },
     {
       "Id": 10,
@@ -109,7 +118,8 @@
         "Limited SEO capabilities",
         "Less flexibility in content management"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "Using a headless CMS with a React frontend allows for easier frontend customization, providing more control over the user interface and experience."
     },
     {
       "Id": 11,
@@ -120,7 +130,8 @@
         "Razor Pages",
         "Static Files"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "Dependency Injection in ASP.NET Core allows developers to manage dependencies in a way that promotes loose coupling and testability."
     },
     {
       "Id": 12,
@@ -131,7 +142,8 @@
         "Dependency on a single service",
         "Limited to small applications"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "One of the key advantages of microservices architecture is that each service can be scaled independently, allowing for more efficient resource management."
     },
     {
       "Id": 13,
@@ -142,7 +154,8 @@
         "By relying on external tools only",
         "By limiting access to APIs"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "ASP.NET Core provides built-in security features, including authentication and authorization, to protect e-commerce platforms from common security threats."
     },
     {
       "Id": 14,
@@ -153,7 +166,8 @@
         "WooCommerce",
         "Magento"
       ],
-      "CorrectOptionIndex": 3
+      "CorrectOptionIndex": 3,
+      "Explanation": "Magento is known for its high level of customizability, making it ideal for businesses with complex e-commerce needs."
     },
     {
       "Id": 15,
@@ -164,7 +178,8 @@
         "Reduced application size and increased flexibility",
         "Decreased performance"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "A modular design in ASP.NET Core allows developers to include only the necessary components, reducing application size and increasing flexibility."
     },
     {
       "Id": 16,
@@ -175,7 +190,8 @@
         "NetSuite",
         "Microsoft Dynamics 365"
       ],
-      "CorrectOptionIndex": 3
+      "CorrectOptionIndex": 3,
+      "Explanation": "Microsoft Dynamics 365 is tightly integrated with other Microsoft products, providing a seamless experience for businesses that rely on Microsoft software."
     },
     {
       "Id": 17,
@@ -186,7 +202,8 @@
         "To store database information",
         "To serve static files"
       ],
-      "CorrectOptionIndex": 0
+      "CorrectOptionIndex": 0,
+      "Explanation": "Middleware in ASP.NET Core is responsible for handling HTTP requests and responses, acting as a pipeline through which all requests are processed."
     },
     {
       "Id": 18,
@@ -197,7 +214,8 @@
         "Vue.js",
         "All of the above"
       ],
-      "CorrectOptionIndex": 3
+      "CorrectOptionIndex": 3,
+      "Explanation": "ASP.NET Core can be used with any of the popular front-end frameworks, including Angular, React, and Vue.js, to build modern, interactive user interfaces."
     },
     {
       "Id": 19,
@@ -208,7 +226,8 @@
         "Limited to small-scale applications",
         "Increased complexity in development"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "Scalability refers to the ability of an application to handle increasing loads, such as more users or transactions, without experiencing a decrease in performance."
     },
     {
       "Id": 20,
@@ -219,7 +238,8 @@
         "Oracle ERP",
         "SAP"
       ],
-      "CorrectOptionIndex": 3
+      "CorrectOptionIndex": 3,
+      "Explanation": "SAP is known for its extensive customization options and is often used in complex deployments, particularly in large enterprises."
     },
     {
       "Id": 21,
@@ -230,7 +250,8 @@
         "Seamless API-first integration",
         "Limited to on-premises deployments"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "ASP.NET Core's flexibility and BigCommerce's API-first approach make for seamless integration, allowing developers to create custom solutions that scale with the business."
     },
     {
       "Id": 22,
@@ -241,7 +262,8 @@
         "Razor Pages",
         "Identity"
       ],
-      "CorrectOptionIndex": 0
+      "CorrectOptionIndex": 0,
+      "Explanation": "SignalR is the component in ASP.NET Core that enables real-time communication, allowing the server to push updates to clients instantly."
     },
     {
       "Id": 23,
@@ -252,7 +274,8 @@
         "Oracle ERP",
         "Microsoft Dynamics 365"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "NetSuite is a cloud-based ERP system that is widely used for financial management and integrates well with e-commerce platforms."
     },
     {
       "Id": 24,
@@ -263,7 +286,8 @@
         "Limited flexibility",
         "Dependency on a single database"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "Microservices architecture allows for independent scaling and deployment of services, making it easier to manage and evolve the application."
     },
     {
       "Id": 25,
@@ -274,7 +298,8 @@
         "By limiting access to front-end users",
         "By storing data in plain text"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "ASP.NET Core offers built-in security mechanisms, but developers can also implement custom authentication and authorization protocols to further enhance security."
     },
     {
       "Id": 26,
@@ -285,7 +310,8 @@
         "NetSuite",
         "Microsoft Dynamics 365"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "NetSuite is a cloud-based ERP system that offers a comprehensive suite of services, including financial management, CRM, and e-commerce."
     },
     {
       "Id": 27,
@@ -296,7 +322,8 @@
         "To replace ERP systems",
         "To limit access to ERP data"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "ASP.NET Core is often used to manage API and middleware integration, allowing for seamless communication between e-commerce platforms and ERP systems."
     },
     {
       "Id": 28,
@@ -307,7 +334,8 @@
         "Vue.js",
         "All of the above"
       ],
-      "CorrectOptionIndex": 3
+      "CorrectOptionIndex": 3,
+      "Explanation": "ASP.NET Core can be paired with any of the popular front-end frameworks, including React, Angular, and Vue.js, to create interactive and dynamic user interfaces."
     },
     {
       "Id": 29,
@@ -318,7 +346,8 @@
         "Cross-platform and lightweight",
         "Monolithic design"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "ASP.NET Core's cross-platform and lightweight nature make it ideal for cloud deployments, allowing applications to run efficiently in cloud environments."
     },
     {
       "Id": 30,
@@ -329,7 +358,8 @@
         "Oracle ERP",
         "Microsoft Dynamics 365"
       ],
-      "CorrectOptionIndex": 0
+      "CorrectOptionIndex": 0,
+      "Explanation": "NetSuite is a cloud-based ERP system that is known for its scalability and integration with other cloud services, making it a popular choice for growing businesses."
     },
     {
       "Id": 31,
@@ -340,7 +370,8 @@
         "Automated data synchronization and workflow management",
         "Increased manual processing"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "ASP.NET Core can be used to automate data synchronization and workflow management between an ERP system and other platforms, reducing manual processes and increasing efficiency."
     },
     {
       "Id": 32,
@@ -351,7 +382,8 @@
         "NetSuite",
         "Microsoft Dynamics 365"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "NetSuite is a popular cloud-based ERP system that offers a wide range of services for businesses, including financial management, CRM, and e-commerce."
     },
     {
       "Id": 33,
@@ -362,7 +394,8 @@
         "Include only necessary components",
         "Decrease performance"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "The modular design of ASP.NET Core allows developers to include only the necessary components, reducing the application's size and improving flexibility and performance."
     },
     {
       "Id": 34,
@@ -373,7 +406,8 @@
         "Microsoft Dynamics 365",
         "NetSuite"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "Microsoft Dynamics 365 is known for its tight integration with other Microsoft products, providing a seamless experience for businesses that rely on the Microsoft ecosystem."
     },
     {
       "Id": 35,
@@ -384,7 +418,8 @@
         "By relying on external tools",
         "Through a single, monolithic handler"
       ],
-      "CorrectOptionIndex": 0
+      "CorrectOptionIndex": 0,
+      "Explanation": "ASP.NET Core handles HTTP requests through a pipeline of middleware components, each responsible for processing the request in some way before passing it on to the next component."
     },
     {
       "Id": 36,
@@ -395,7 +430,8 @@
         "Dynamic UI capabilities and seamless API integration",
         "Increased development complexity"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "React is well-suited for building dynamic user interfaces that can seamlessly integrate with APIs provided by ASP.NET Core, offering a highly interactive user experience."
     },
     {
       "Id": 37,
@@ -406,7 +442,8 @@
         "Oracle ERP",
         "Microsoft Dynamics 365"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "Oracle ERP is widely used for complex financial and supply chain management, offering extensive features for large enterprises."
     },
     {
       "Id": 38,
@@ -417,7 +454,8 @@
         "Independent scaling and deployment",
         "Single database dependency"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "ASP.NET Core's support for microservices architecture allows for independent scaling and deployment of services, enabling more efficient management of large, complex applications."
     },
     {
       "Id": 39,
@@ -428,7 +466,8 @@
         "By reducing access to APIs",
         "By storing data in plain text"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "ASP.NET Core improves security through built-in mechanisms such as authentication, authorization, and data protection, as well as the ability to implement custom security protocols."
     },
     {
       "Id": 40,
@@ -439,7 +478,8 @@
         "Oracle ERP",
         "Microsoft Dynamics 365"
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "SAP is known for its modular design and extensive customization options, making it a preferred choice for large enterprises with complex requirements."
     }
   ]
 }
