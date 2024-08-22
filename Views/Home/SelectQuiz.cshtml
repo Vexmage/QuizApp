@@ -41,5 +41,17 @@
             Comprehensive ERP and ASP.NET Core Quiz
         </label>
     </div>
+
+    <h3>Timer Settings</h3>
+    <div>
+        <label>
+            <input type="checkbox" name="timerEnabled" checked /> Enable Timer
+        </label>
+    </div>
+    <div>
+        <label for="timerDuration">Timer Duration (seconds):</label>
+        <input type="number" name="timerDuration" value="180" min="0" id="timerDuration" />
+    </div>
+
     <button type="submit">Start Quiz</button>
 </form>

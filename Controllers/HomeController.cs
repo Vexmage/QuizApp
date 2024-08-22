@@ -37,11 +37,16 @@ namespace QuizApp.Controllers
 
 
         [HttpPost]
-        public IActionResult LoadQuiz(string quizFileName)
+        public IActionResult LoadQuiz(string quizFileName, bool timerEnabled = true, int timerDuration = 180)
         {
             // Load the selected quiz
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", quizFileName);
             var quiz = _quizService.LoadQuiz(filePath);
+
+            // Use the passed-in timer settings
+            ViewBag.TimerEnabled = timerEnabled;
+            ViewBag.TimerDuration = timerDuration;
+
             ViewData["QuizFileName"] = quizFileName;
             return View("Quiz", quiz);
         }

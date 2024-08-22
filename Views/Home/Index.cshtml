@@ -1,14 +1,19 @@
 ﻿@model QuizApp.Models.Quiz
 @{
     var results = ViewBag.Results as Dictionary<int, bool>;
+    var timerEnabled = ViewBag.TimerEnabled as bool? ?? true;
+    var timerDuration = ViewBag.TimerDuration as int? ?? 180;
 }
 
 <div class="quiz-container">
     <h1>@Model.Title</h1>
 
-    <div class="timer">
-        <p>Time remaining: <span id="time">03:00</span></p>
-    </div>
+    @if (timerEnabled)
+    {
+        <div class="timer">
+            <p>Time remaining: <span id="time">@((timerDuration / 60).ToString("00")):@((timerDuration % 60).ToString("00"))</span></p>
+        </div>
+    }
 
     <form method="post" action="/Home/SubmitQuiz" id="quizForm">
         @foreach (var question in Model.Questions)
@@ -44,15 +49,17 @@
     </form>
 </div>
 
-<!-- Popup Modal -->
-<div id="timeoutModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>You ran out of time!</p>
-        <button id="retryButton">Try Again</button>
+@if (timerEnabled)
+{
+    <!-- Popup Modal -->
+    <div id="timeoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>You ran out of time!</p>
+            <button id="retryButton">Try Again</button>
+        </div>
     </div>
-</div>
-
+}
 <style>
     /* Modal Styles */
     .modal {
@@ -92,50 +99,56 @@
     }
 </style>
 
-<script>
-    // Timer settings
-    var timeLeft = 180; // Time in seconds (3 minutes)
-    var timerElement = document.getElementById('time');
-    var quizForm = document.getElementById('quizForm');
-    var modal = document.getElementById('timeoutModal');
-    var retryButton = document.getElementById('retryButton');
+@if (timerEnabled) {
+    <script>
+        var timerEnabled = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(timerEnabled));
+        var timeLeft = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(timerDuration)); // Time in seconds
 
-    function updateTimer() {
-        var minutes = Math.floor(timeLeft / 60);
-        var seconds = timeLeft % 60;
 
-        // Add leading zeros
-        if (minutes < 10) minutes = "0" + minutes;
-        if (seconds < 10) seconds = "0" + seconds;
 
-        timerElement.textContent = minutes + ":" + seconds;
+        if (timerEnabled) {
+            var timerElement = document.getElementById('time');
+            var modal = document.getElementById('timeoutModal');
+            var retryButton = document.getElementById('retryButton');
 
-        // Check if time is up
-        if (timeLeft <= 0) {
-            clearInterval(timerInterval);
-            modal.style.display = "block"; // Show the timeout modal
+            function updateTimer() {
+                var minutes = Math.floor(timeLeft / 60);
+                var seconds = timeLeft % 60;
+
+                // Add leading zeros
+                if (minutes < 10) minutes = "0" + minutes;
+                if (seconds < 10) seconds = "0" + seconds;
+
+                timerElement.textContent = minutes + ":" + seconds;
+
+                // Check if time is up
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    modal.style.display = "block"; // Show the timeout modal
+                }
+
+                timeLeft--;
+            }
+
+            // Start the timer
+            var timerInterval = setInterval(updateTimer, 1000);
+
+            // When the user clicks on retry, reload the page to retake the quiz
+            retryButton.onclick = function () {
+                location.reload();
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            document.querySelector(".close").onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
         }
-
-        timeLeft--;
-    }
-
-    // Start the timer
-    var timerInterval = setInterval(updateTimer, 1000);
-
-    // When the user clicks on retry, reload the page to retake the quiz
-    retryButton.onclick = function() {
-        location.reload();
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    document.querySelector(".close").onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
+    </script>
+}
