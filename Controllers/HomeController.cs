@@ -79,34 +79,39 @@ namespace QuizApp.Controllers
 
         public IActionResult StudyFiles()
         {
-            var studyFiles = LoadAllStudyFiles(); // This loads all study files
+            var studyFiles = GetStudyFileNames(); // This loads all study file names
             return View(studyFiles);
         }
 
-        private List<StudyFile> LoadAllStudyFiles()
+        private List<string> GetStudyFileNames()
         {
-            var studyFiles = new List<StudyFile>();
             var directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", "studyFiles");
+            var fileNames = Directory.GetFiles(directoryPath, "*.json")
+                                     .Select(Path.GetFileNameWithoutExtension)
+                                     .ToList();
+            return fileNames;
+        }
 
-            foreach (var file in Directory.GetFiles(directoryPath, "*.json"))
+        public IActionResult StudyFile(string fileName)
+        {
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", "studyFiles", $"{fileName}.json");
+
+            if (!System.IO.File.Exists(filePath))
             {
-                try
-                {
-                    var jsonString = System.IO.File.ReadAllText(file);
-                    var fileStudyFiles = JsonSerializer.Deserialize<List<StudyFile>>(jsonString);
-
-                    if (fileStudyFiles != null)
-                    {
-                        studyFiles.AddRange(fileStudyFiles);
-                    }
-                }
-                catch (JsonException ex)
-                {
-                    Debug.WriteLine($"Failed to deserialize file: {file}. Error: {ex.Message}");
-                }
+                return NotFound(); // Handle file not found
             }
 
-            return studyFiles;
+            var jsonString = System.IO.File.ReadAllText(filePath);
+
+            // Deserialize a single StudyFile object, not a list
+            var studyFile = JsonSerializer.Deserialize<StudyFile>(jsonString);
+
+            if (studyFile == null)
+            {
+                return NotFound(); // Handle deserialization failure
+            }
+
+            return View(studyFile);
         }
 
         public IActionResult Privacy()
