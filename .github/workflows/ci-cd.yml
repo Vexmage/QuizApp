@@ -32,8 +32,3 @@ jobs:
 
     - name: Publish
       run: dotnet publish -c Release -o ./publish
-
-    - name: Deploy to Server (optional)
-      run: |
-        scp -r ./publish/* ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/path/to/your/app
-      if: github.ref == 'refs/heads/main'
