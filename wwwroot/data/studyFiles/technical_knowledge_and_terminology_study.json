@@ -1,0 +1,26 @@
+{
+  "Title": "Understanding Technical Knowledge and Terminology",
+  "Content": "This study file is designed to help you grasp essential technical knowledge and terminology that are crucial in the field of software development and e-commerce. From secure payment processing to understanding Object-Relational Mappers (ORMs), this guide provides explanations and vocabulary that will enhance your understanding of the key concepts covered in the quiz.\n\nLet's dive into the details of each topic, starting with secure payment processing, the role of ORMs in application development, the concept of A/B testing in e-commerce, and the use of libraries for handling emails in .NET applications.",
+  "Vocabulary": [
+    {
+      "Term": "Braintree",
+      "Definition": "A popular payment processing platform used in e-commerce to handle transactions securely. It provides tools to manage payments, subscriptions, and fraud prevention."
+    },
+    {
+      "Term": "Entity Framework Core (EF Core)",
+      "Definition": "An Object-Relational Mapper (ORM) for ASP.NET Core, allowing developers to interact with a database using .NET objects, simplifying data manipulation and querying tasks."
+    },
+    {
+      "Term": "A/B Testing",
+      "Definition": "A method used in e-commerce to compare two versions of a webpage or app against each other to determine which one performs better based on user interactions."
+    },
+    {
+      "Term": "MailKit",
+      "Definition": "A .NET library used for sending, receiving, and processing emails in applications."
+    },
+    {
+      "Term": "MimeKit",
+      "Definition": "A .NET library used for parsing and creating MIME messages, often used in conjunction with MailKit for handling email functionalities."
+    }
+  ]
+}

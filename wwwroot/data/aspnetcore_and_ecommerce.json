@@ -1,0 +1,126 @@
+{
+  "Title": "ASP.NET Core and E-commerce",
+  "Description": "This quiz tests your knowledge of ASP.NET Core and its advantages in building robust and scalable e-commerce applications.",
+  "Questions": [
+    {
+      "Id": 1,
+      "Text": "What is ASP.NET Core?",
+      "Options": [
+        "A) A front-end framework for building user interfaces.",
+        "B) A cross-platform, high-performance framework for building modern, cloud-based, internet-connected applications.",
+        "C) A database management system.",
+        "D) A programming language."
+      ],
+      "CorrectOptionIndex": 1,
+      "Explanation": "ASP.NET Core is a cross-platform, high-performance framework developed by Microsoft for building modern, cloud-based, internet-connected applications, including web apps, APIs, microservices, and more."
+    },
+    {
+      "Id": 2,
+      "Text": "Which of the following is a key feature of ASP.NET Core that benefits e-commerce platforms?",
+      "Options": [
+        "A) Its ability to run only on Windows.",
+        "B) Integrated development environment (IDE) dependency.",
+        "C) High performance and scalability.",
+        "D) Limited support for third-party libraries."
+      ],
+      "CorrectOptionIndex": 2,
+      "Explanation": "ASP.NET Core is known for its high performance and scalability, making it an excellent choice for e-commerce platforms that need to handle a high volume of transactions and users efficiently."
+    },
+    {
+      "Id": 3,
+      "Text": "Why is cross-platform support in ASP.NET Core important for e-commerce development?",
+      "Options": [
+        "A) It allows applications to run on multiple operating systems, reducing hosting costs.",
+        "B) It restricts the application to only one type of operating system.",
+        "C) It makes the application more difficult to maintain.",
+        "D) It decreases application security."
+      ],
+      "CorrectOptionIndex": 0,
+      "Explanation": "Cross-platform support in ASP.NET Core allows applications to run on various operating systems such as Windows, Linux, and macOS, providing flexibility in hosting and reducing costs."
+    },
+    {
+      "Id": 4,
+      "Text": "How does ASP.NET Core ensure secure e-commerce transactions?",
+      "Options": [
+        "A) It uses basic HTML forms for security.",
+        "B) It integrates with advanced security protocols like HTTPS, data encryption, and identity management.",
+        "C) It relies solely on the client's security measures.",
+        "D) It does not offer built-in security features."
+      ],
+      "CorrectOptionIndex": 1,
+      "Explanation": "ASP.NET Core integrates with advanced security protocols like HTTPS, data encryption, and provides comprehensive identity management features, ensuring secure e-commerce transactions."
+    },
+    {
+      "Id": 5,
+      "Text": "Which ASP.NET Core feature helps improve the performance of e-commerce websites?",
+      "Options": [
+        "A) ViewBag and ViewData.",
+        "B) Dependency Injection.",
+        "C) Razor Pages.",
+        "D) Built-in caching mechanisms."
+      ],
+      "CorrectOptionIndex": 3,
+      "Explanation": "ASP.NET Core includes built-in caching mechanisms that can significantly improve the performance of e-commerce websites by reducing the load on the server and speeding up response times."
+    },
+    {
+      "Id": 6,
+      "Text": "What is the role of middleware in an ASP.NET Core application?",
+      "Options": [
+        "A) To handle user interface design.",
+        "B) To manage server-side scripting.",
+        "C) To process requests and responses in the application pipeline.",
+        "D) To manage database connections."
+      ],
+      "CorrectOptionIndex": 2,
+      "Explanation": "Middleware in ASP.NET Core is a crucial component that processes requests and responses as they pass through the application pipeline. It can handle tasks like authentication, logging, and error handling."
+    },
+    {
+      "Id": 7,
+      "Text": "Which database systems are commonly used with ASP.NET Core for e-commerce applications?",
+      "Options": [
+        "A) SQL Server and MySQL.",
+        "B) Microsoft Excel and Access.",
+        "C) MongoDB and Notepad.",
+        "D) SQLite and CSV files."
+      ],
+      "CorrectOptionIndex": 0,
+      "Explanation": "ASP.NET Core is commonly paired with relational databases like SQL Server and MySQL, which are well-suited for managing the complex data requirements of e-commerce applications."
+    },
+    {
+      "Id": 8,
+      "Text": "How does ASP.NET Core support responsive design for e-commerce websites?",
+      "Options": [
+        "A) It forces desktop-only layouts.",
+        "B) It integrates with front-end frameworks like Bootstrap.",
+        "C) It removes CSS styling.",
+        "D) It uses inline HTML styling."
+      ],
+      "CorrectOptionIndex": 1,
+      "Explanation": "ASP.NET Core supports responsive design by integrating seamlessly with front-end frameworks like Bootstrap, which allows developers to create websites that adapt to different screen sizes and devices."
+    },
+    {
+      "Id": 9,
+      "Text": "Why is dependency injection important in ASP.NET Core for e-commerce applications?",
+      "Options": [
+        "A) It tightly couples the application components.",
+        "B) It allows developers to replace services with mock implementations during testing.",
+        "C) It increases code redundancy.",
+        "D) It prevents the application from scaling."
+      ],
+      "CorrectOptionIndex": 1,
+      "Explanation": "Dependency injection is important in ASP.NET Core because it promotes loose coupling and testability by allowing developers to replace services with mock implementations during testing."
+    },
+    {
+      "Id": 10,
+      "Text": "What is the significance of Razor Pages in ASP.NET Core?",
+      "Options": [
+        "A) They provide a simplified model for building UI with server-side logic.",
+        "B) They are used exclusively for database management.",
+        "C) They replace HTML entirely.",
+        "D) They are only for client-side scripting."
+      ],
+      "CorrectOptionIndex": 0,
+      "Explanation": "Razor Pages in ASP.NET Core offer a simplified model for building web user interfaces with server-side logic, making it easier to create dynamic and responsive e-commerce pages."
+    }
+  ]
+}

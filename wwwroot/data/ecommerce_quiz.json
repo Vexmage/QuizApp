@@ -1,5 +1,6 @@
 {
   "Title": "E-commerce Management Concepts",
+  "Description": "This quiz covers fundamental concepts in e-commerce management, including MVPs, Conversion Rate Optimization, scalability, and phased rollouts.",
   "Questions": [
     {
       "Id": 1,
@@ -10,7 +11,8 @@
         "C) A product that has all the features but is not yet tested.",
         "D) A prototype that is never released to the market."
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "A Minimum Viable Product (MVP) is the initial version of a product with just enough features to satisfy early adopters. It is important in a phased rollout strategy because it allows businesses to test their product concept with minimal resources and gather valuable user feedback before fully committing to the complete development."
     },
     {
       "Id": 2,
@@ -21,7 +23,8 @@
         "C) Increasing page load times",
         "D) Analyzing user behavior"
       ],
-      "CorrectOptionIndex": 2
+      "CorrectOptionIndex": 2,
+      "Explanation": "Increasing page load times is actually detrimental to Conversion Rate Optimization (CRO). CRO focuses on improving user experience, conducting A/B testing, and analyzing user behavior to increase the percentage of visitors who complete a desired action, such as making a purchase."
     },
     {
       "Id": 3,
@@ -32,7 +35,8 @@
         "C) The ability to scale down operations to reduce workload.",
         "D) The ability to change the platform's design based on user feedback."
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "In the context of an e-commerce platform, scalability refers to the platform's ability to handle an increasing number of users and transactions without compromising performance. This is crucial for supporting growth and ensuring a smooth user experience during traffic spikes."
     },
     {
       "Id": 4,
@@ -43,7 +47,8 @@
         "C) Rolling back the platform if there are too many bugs.",
         "D) Developing the platform in secret before announcing it to the public."
       ],
-      "CorrectOptionIndex": 1
+      "CorrectOptionIndex": 1,
+      "Explanation": "A phased rollout is a strategy where the platform or feature is gradually released to different user groups over time. This approach helps manage risk, allows for incremental testing, and provides opportunities to make adjustments based on feedback from early users before a full-scale launch."
     }
   ]
 }
