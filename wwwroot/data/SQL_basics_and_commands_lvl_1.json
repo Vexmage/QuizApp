@@ -1,0 +1,126 @@
+{
+  "Title": "SQL Basics and Commands - Level 1",
+  "Description": "This quiz covers fundamental SQL commands and concepts, including basic queries, table creation, data manipulation, and simple joins.",
+  "Questions": [
+    {
+      "Id": 1,
+      "Text": "What does SQL stand for?",
+      "Options": [
+        "Structured Query Language",
+        "Simple Query Language",
+        "Standard Query Language",
+        "System Query Language"
+      ],
+      "CorrectOptionIndex": 0,
+      "Explanation": "SQL stands for Structured Query Language, a standard language for managing and manipulating databases."
+    },
+    {
+      "Id": 2,
+      "Text": "Which SQL command is used to retrieve data from a database?",
+      "Options": [
+        "SELECT",
+        "GET",
+        "FETCH",
+        "RETRIEVE"
+      ],
+      "CorrectOptionIndex": 0,
+      "Explanation": "The SELECT command is used to retrieve data from a database."
+    },
+    {
+      "Id": 3,
+      "Text": "Which SQL clause is used to filter records in a query?",
+      "Options": [
+        "WHERE",
+        "FILTER",
+        "HAVING",
+        "ORDER BY"
+      ],
+      "CorrectOptionIndex": 0,
+      "Explanation": "The WHERE clause is used to filter records that meet certain criteria."
+    },
+    {
+      "Id": 4,
+      "Text": "How do you create a new table in SQL?",
+      "Options": [
+        "CREATE TABLE table_name (column1 datatype, column2 datatype, ...);",
+        "NEW TABLE table_name (column1 datatype, column2 datatype, ...);",
+        "ADD TABLE table_name (column1 datatype, column2 datatype, ...);",
+        "MAKE TABLE table_name (column1 datatype, column2 datatype, ...);"
+      ],
+      "CorrectOptionIndex": 0,
+      "Explanation": "The CREATE TABLE statement is used to create a new table in the database."
+    },
+    {
+      "Id": 5,
+      "Text": "Which SQL statement is used to update data in a table?",
+      "Options": [
+        "MODIFY",
+        "UPDATE",
+        "CHANGE",
+        "SET"
+      ],
+      "CorrectOptionIndex": 1,
+      "Explanation": "The UPDATE statement is used to modify the existing records in a table."
+    },
+    {
+      "Id": 6,
+      "Text": "What is the purpose of the SQL GROUP BY clause?",
+      "Options": [
+        "To sort the result set",
+        "To aggregate data by one or more columns",
+        "To filter rows based on aggregate functions",
+        "To join two or more tables"
+      ],
+      "CorrectOptionIndex": 1,
+      "Explanation": "The GROUP BY clause groups rows that have the same values in specified columns and allows aggregate functions to be applied to each group."
+    },
+    {
+      "Id": 7,
+      "Text": "Which SQL function is used to count the number of rows in a result set?",
+      "Options": [
+        "COUNT()",
+        "SUM()",
+        "ROWCOUNT()",
+        "TOTAL()"
+      ],
+      "CorrectOptionIndex": 0,
+      "Explanation": "The COUNT() function returns the number of rows that match the specified criteria."
+    },
+    {
+      "Id": 8,
+      "Text": "What does the SQL JOIN clause do?",
+      "Options": [
+        "Combines rows from two or more tables based on a related column",
+        "Filters rows in a result set",
+        "Orders the result set",
+        "Modifies data in multiple tables"
+      ],
+      "CorrectOptionIndex": 0,
+      "Explanation": "The JOIN clause is used to combine rows from two or more tables based on a related column between them."
+    },
+    {
+      "Id": 9,
+      "Text": "How do you delete a record from a table in SQL?",
+      "Options": [
+        "REMOVE FROM table_name WHERE condition;",
+        "DELETE FROM table_name WHERE condition;",
+        "DROP FROM table_name WHERE condition;",
+        "CLEAR FROM table_name WHERE condition;"
+      ],
+      "CorrectOptionIndex": 1,
+      "Explanation": "The DELETE statement is used to remove existing records from a table."
+    },
+    {
+      "Id": 10,
+      "Text": "What is a primary key in SQL?",
+      "Options": [
+        "A unique identifier for a record in a table",
+        "A foreign key that links two tables",
+        "A column that allows NULL values",
+        "A function that aggregates data"
+      ],
+      "CorrectOptionIndex": 0,
+      "Explanation": "A primary key is a unique identifier for each record in a table, ensuring that no duplicate records exist."
+    }
+  ]
+}

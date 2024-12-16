@@ -1,0 +1,50 @@
+{
+  "Title": "Advanced SQL Concepts",
+  "Content": "This study guide covers advanced SQL concepts, including the use of joins, subqueries, indexing, and data manipulation. Understanding these topics is crucial for optimizing database queries and maintaining data integrity in relational databases.",
+  "Vocabulary": [
+    {
+      "Term": "JOIN",
+      "Definition": "A SQL operation that combines rows from two or more tables based on a related column between them."
+    },
+    {
+      "Term": "Subquery",
+      "Definition": "A query nested inside another SQL query, used for operations requiring multiple steps."
+    },
+    {
+      "Term": "Index",
+      "Definition": "A database structure that improves the speed of data retrieval by providing quick access to rows in a table."
+    },
+    {
+      "Term": "INNER JOIN",
+      "Definition": "A type of join that returns only the rows with matching values in both tables."
+    },
+    {
+      "Term": "LEFT JOIN",
+      "Definition": "A type of join that returns all rows from the left table, and the matching rows from the right table."
+    },
+    {
+      "Term": "HAVING",
+      "Definition": "A SQL clause used to filter groups of rows created by the GROUP BY clause, typically used with aggregate functions."
+    },
+    {
+      "Term": "Primary Key",
+      "Definition": "A field in a table that uniquely identifies each row and ensures that no two rows have the same value."
+    },
+    {
+      "Term": "DISTINCT",
+      "Definition": "A SQL keyword used to remove duplicate records from the result set."
+    },
+    {
+      "Term": "Foreign Key",
+      "Definition": "A field in one table that uniquely identifies a row in another table, establishing a relationship between the two tables."
+    },
+    {
+      "Term": "ORDER BY",
+      "Definition": "A SQL clause used to sort the result set in ascending or descending order."
+    },
+    {
+      "Term": "UPDATE",
+      "Definition": "A SQL command used to modify existing data in a table."
+    }
+  ]
+}

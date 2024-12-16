@@ -1,0 +1,47 @@
+{
+  "Title": "SQL Basics and Commands - Level 1 Study Guide",
+  "Description": "This study guide covers the essential SQL commands and concepts that are critical for understanding and working with databases. It includes explanations of SQL commands, clauses, and concepts that are frequently asked about in entry-level SQL interviews.",
+  "Content": "1. Introduction to SQL:\n- SQL is the standard language used to communicate with databases. It allows you to retrieve, insert, update, and delete data stored in relational databases.\n\n2. Basic SQL Commands:\n- SELECT: Retrieves data from one or more tables.\n- WHERE: Filters records based on specific conditions.\n- INSERT INTO: Adds new records to a table.\n- UPDATE: Modifies existing records in a table.\n- DELETE: Removes records from a table.\n\n3. Table Management:\n- CREATE TABLE: Creates a new table in the database.\n- ALTER TABLE: Modifies the structure of an existing table.\n- DROP TABLE: Deletes a table and its data permanently.\n\n4. SQL Functions and Clauses:\n- GROUP BY: Aggregates data by one or more columns.\n- ORDER BY: Sorts the result set in ascending or descending order.\n- COUNT(), SUM(), AVG(), MIN(), MAX(): Aggregate functions used for various calculations on data.\n\n5. SQL Joins:\n- INNER JOIN: Combines rows from two tables based on a related column.\n- LEFT JOIN: Returns all rows from the left table and matched rows from the right table.\n- RIGHT JOIN: Returns all rows from the right table and matched rows from the left table.\n- FULL OUTER JOIN: Returns all rows when there is a match in either left or right table.\n\n6. Keys and Constraints:\n- Primary Key: A unique identifier for each record in a table.\n- Foreign Key: A field in one table that links to the primary key in another table.\n- Unique Constraint: Ensures that all values in a column are unique.\n- Not Null Constraint: Ensures that a column cannot have NULL values.\n\n7. Best Practices:\n- Always use proper indexing to optimize query performance.\n- Use JOINs appropriately to retrieve related data across multiple tables.\n- Regularly back up your database to prevent data loss.",
+  "Vocabulary": [
+    {
+      "Term": "SQL",
+      "Definition": "Structured Query Language, a standard language for managing and manipulating databases."
+    },
+    {
+      "Term": "Primary Key",
+      "Definition": "A unique identifier for a record in a table."
+    },
+    {
+      "Term": "Foreign Key",
+      "Definition": "A key used to link two tables together."
+    },
+    {
+      "Term": "JOIN",
+      "Definition": "A SQL clause used to combine rows from two or more tables."
+    },
+    {
+      "Term": "Aggregate Functions",
+      "Definition": "Functions that perform calculations on multiple values and return a single value (e.g., COUNT, SUM, AVG)."
+    },
+    {
+      "Term": "Normalization",
+      "Definition": "The process of organizing data in a database to reduce redundancy and improve data integrity."
+    },
+    {
+      "Term": "Index",
+      "Definition": "A database object that improves the speed of data retrieval."
+    },
+    {
+      "Term": "Constraint",
+      "Definition": "A rule applied to data in a table to ensure data integrity."
+    },
+    {
+      "Term": "Transaction",
+      "Definition": "A sequence of SQL statements that are executed as a single unit of work."
+    },
+    {
+      "Term": "Stored Procedure",
+      "Definition": "A precompiled collection of SQL statements stored in the database."
+    }
+  ]
+}
